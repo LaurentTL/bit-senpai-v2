@@ -24,7 +24,7 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
           <div className="hidden md:block">
             <Logo />
           </div>
-          <div className="hidden lg:flex ml-10">
+          <div className="hidden md:flex ml-10">
             <HoverLink
               route="/tracker"
               title="Go to Tracker"
