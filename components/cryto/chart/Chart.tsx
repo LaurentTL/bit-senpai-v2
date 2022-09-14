@@ -23,7 +23,7 @@ ChartJS.register(
 
 export interface IChart {
   id: string;
-  data: object;
+  data: [];
 }
 
 const Chart: React.FC<IChart> = ({ id, data }) => {
@@ -36,7 +36,7 @@ const Chart: React.FC<IChart> = ({ id, data }) => {
     },
   };
 
-  const labels = data.prices.map((price: string) => {
+  const labels = data.map((price: string) => {
     const date = new Date(price[0]);
     const formatDate = `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`;
     return formatDate;
@@ -48,7 +48,7 @@ const Chart: React.FC<IChart> = ({ id, data }) => {
     datasets: [
       {
         label: `${id}`,
-        data: data.prices.map((price: string) => price[1]),
+        data: data.map((price: string) => price[1]),
         borderColor: '#636dff',
         tension: 0.4,
         pointBackgroundColor: 'rgba(0,0,0,0)',

@@ -3,7 +3,7 @@ import { IChart } from './Chart';
 
 const base: IChart = {
   id: 'Bitcoion',
-  data: data,
+  data: data.prices,
 };
 
 export const mockChartProps = {
