@@ -23,7 +23,10 @@ ChartJS.register(
 
 export interface IChart {
   id: string;
-  data: [];
+  data: {
+    // issue to type value of the data key, any for now
+    [key: string]: any;
+  };
 }
 
 const Chart: React.FC<IChart> = ({ id, data }) => {
@@ -36,7 +39,7 @@ const Chart: React.FC<IChart> = ({ id, data }) => {
     },
   };
 
-  const labels = data.map((price: string) => {
+  const labels = data.prices.map((price: any) => {
     const date = new Date(price[0]);
     const formatDate = `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`;
     return formatDate;
@@ -48,7 +51,7 @@ const Chart: React.FC<IChart> = ({ id, data }) => {
     datasets: [
       {
         label: `${id}`,
-        data: data.map((price: string) => price[1]),
+        data: data.prices.map((price: any) => price[1]),
         borderColor: '#636dff',
         tension: 0.4,
         pointBackgroundColor: 'rgba(0,0,0,0)',
