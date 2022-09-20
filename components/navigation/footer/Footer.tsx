@@ -36,7 +36,7 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
                 Technologies
               </a>
             </Link>
-            <Link href="/">
+            <Link href="https://github.com/LaurentTL/bit-senpai-v2">
               <a className="text-white font-light hover:text-blue-300">
                 GitHub
               </a>
