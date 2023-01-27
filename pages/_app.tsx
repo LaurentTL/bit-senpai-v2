@@ -6,10 +6,10 @@ import { NextPageWithLayout } from './page';
 
 interface AppPropsWithLayout extends AppProps {
   Component: NextPageWithLayout;
+  session: any;
 }
 
 function MyApp({ Component, session, pageProps }: AppPropsWithLayout) {
-  // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page);
 
   return (
