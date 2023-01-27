@@ -5,6 +5,8 @@ import logoBitSenpai from '../../../public/static/images/logo.svg';
 export interface IFooter extends React.ComponentPropsWithoutRef<'footer'> {}
 
 const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
+  let dateY = new Date().getFullYear();
+
   return (
     <footer {...footerProps} className={`w-full px-3 ${className}`}>
       <div className="container w-full grid">
@@ -36,11 +38,14 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
                 Technologies
               </a>
             </Link>
-            <Link href="https://github.com/LaurentTL/bit-senpai-v2">
-              <a className="text-white font-light hover:text-blue-300">
-                GitHub
-              </a>
-            </Link>
+            <a
+              href="https://github.com/LaurentTL/bit-senpai-v2"
+              className="text-white font-light hover:text-blue-300"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </div>
           <div className="flex flex-col">
             <h2 className="text-gray-400 mb-3">Get in touch</h2>
@@ -59,7 +64,7 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
       </div>
       <div className="mt-12 mb-4">
         <p className="text-gray-400 font-light text-xs">
-          © 2022 BitSenpai | LaurentTL. All rights reserved
+          © {dateY} BitSenpai | LaurentTL. All rights reserved
         </p>
       </div>
     </footer>
