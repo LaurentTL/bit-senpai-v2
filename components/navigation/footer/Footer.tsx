@@ -13,15 +13,13 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
         <div className="grid w-full grid-cols-2 gap-y-4 md:grid-cols-3">
           <div className="flex flex-col">
             <div className="relative w-10 h-10">
-              <Link href="/">
-                <a>
-                  <Image
-                    src={logoBitSenpai}
-                    layout="fill"
-                    objectFit="contain"
-                    alt="logo bitsenpai"
-                  />
-                </a>
+              <Link href="/" passHref>
+                <Image
+                  src={logoBitSenpai}
+                  fill
+                  objectFit="contain"
+                  alt="logo bitsenpai"
+                />
               </Link>
             </div>
             <p className="mt-3 font-light text-gray-600">
@@ -30,10 +28,10 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
           </div>
           <div className="flex flex-col">
             <h2 className="text-gray-400 mb-3">BitSenpai</h2>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className="text-white font-light hover:text-blue-300">About</a>
             </Link>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className="text-white font-light hover:text-blue-300">
                 Technologies
               </a>
@@ -51,10 +49,10 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
             <h2 className="text-gray-400 mb-3">Get in touch</h2>
             <p className="text-white font-light">+33 6 58 03 83 64</p>
 
-            <Link href="mailto:laurent.treuil@gmail.com">
+            <Link href="mailto:laurent.treuil@gmail.com" legacyBehavior>
               <a className="text-white font-light hover:text-blue-300">Email</a>
             </Link>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className="text-white font-light hover:text-blue-300">
                 LinkedIn
               </a>

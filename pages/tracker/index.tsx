@@ -61,7 +61,11 @@ const Tracker: NextPageWithLayout = ({
               key={coin.id}
               className="w-full py-3 border-b border-gray-100 border-opacity-25  duration-100 hover:scale-105"
             >
-              <Link as={`/tracker/${coin.id}`} href="/[traker]/[coinId]">
+              <Link
+                as={`/tracker/${coin.id}`}
+                href="/[traker]/[coinId]"
+                legacyBehavior
+              >
                 <a className="w-full h-full flex flex-1 justify-between items-center">
                   <CryptoSymName
                     imageUrl={coin.image.small}

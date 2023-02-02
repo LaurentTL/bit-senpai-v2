@@ -8,7 +8,7 @@ export interface IHoverLink {
 
 const HoverLink: React.FC<IHoverLink> = ({ route, title, hoverColor }) => {
   return (
-    <Link href={route}>
+    <Link href={route} legacyBehavior>
       <a className={`text-white font-light hover:text-${hoverColor}-300`}>
         {title}
       </a>
