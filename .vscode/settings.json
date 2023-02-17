@@ -5,6 +5,9 @@
     "source.fixAll": true,
     "source.organizeImports": true
   },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "cSpell.words": [
     "codenames",
     "colour",

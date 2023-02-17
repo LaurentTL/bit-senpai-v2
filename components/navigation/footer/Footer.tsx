@@ -17,7 +17,7 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
                 <Image
                   src={logoBitSenpai}
                   fill
-                  objectFit="contain"
+                  style={{ objectFit: 'contain' }}
                   alt="logo bitsenpai"
                 />
               </Link>

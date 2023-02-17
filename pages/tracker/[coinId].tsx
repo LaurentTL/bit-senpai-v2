@@ -26,8 +26,8 @@ const CoinPage: NextPageWithLayout = ({
               <Image
                 src={imageLarge}
                 alt={dataCoin.id}
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: 'contain' }}
               />
             </div>
             <div>

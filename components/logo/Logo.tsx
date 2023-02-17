@@ -9,8 +9,8 @@ const Logo: React.FC<ILogo> = () => {
       <div className="relative h-7 w-7">
         <Image
           src={logoBitSenpai}
-          layout="fill"
-          objectFit="contain"
+          fill
+          style={{ objectFit: 'contain' }}
           alt="logo bitsenpai"
         />
       </div>

@@ -19,6 +19,10 @@ This project is a crypto currency tracker frontend application using an external
     <img src="https://github.com/devicons/devicon/blob/master/icons/storybook/storybook-original.svg" title="Storybook" **alt="Storybook" width="40" height="40"/>&nbsp;
 </div>
 
+# 🛠️ 👾 Issues, bugs etc.
+
+- [] Tracker page broken beacause of Coingeko has changed mains endpoints
+
 # ⚡️ Features, config etc.
 
 - [x] Complete lib Ui components in isolation with **Storybook**
@@ -31,3 +35,4 @@ This project is a crypto currency tracker frontend application using an external
 - [ ] **User dashboard**
 - [ ] Implementation of a **more advance design** on home page
 - [ ] Specifics **modal and page** to inform users that a feature is under construction
+- [ ] **404** and **500** error pages

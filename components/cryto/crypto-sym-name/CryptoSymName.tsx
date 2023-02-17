@@ -12,13 +12,7 @@ const CryptoSymName: React.FC<ICryptoSymName> = ({ imageUrl, name, sym }) => {
   return (
     <div className="w-1/3 flex items-center space-x-3">
       <div className="relative w-8 h-8">
-        <Image
-          src={imageUrl}
-          layout="fill"
-          width={100}
-          height={100}
-          alt={`${name} logo`}
-        />
+        <Image src={imageUrl} width={100} height={100} alt={`${name} logo`} />
       </div>
       <div className="flex flex-col items-start gap-1 md:flex-row md:items-baseline md:gap-3">
         <p className="text-white">{capName}</p>
