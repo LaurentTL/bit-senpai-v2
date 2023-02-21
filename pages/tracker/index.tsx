@@ -13,9 +13,10 @@ const Tracker: NextPageWithLayout = ({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const [search, setSearch] = useState('');
 
+  console.log(coinsGeko);
+
   let handleSearch = (searchValue: any) => {
     setSearch(searchValue);
-    console.log(search);
   };
 
   return (
@@ -48,11 +49,11 @@ const Tracker: NextPageWithLayout = ({
         </div>
       </div>
       {coinsGeko
-        .filter((val: any) => {
+        .filter((coin: any) => {
           if (search == '') {
-            return val;
-          } else if (val.name.toLowerCase().includes(search.toLowerCase())) {
-            return val;
+            return coin;
+          } else if (coin.name.toLowerCase().includes(search.toLowerCase())) {
+            return coin;
           }
         })
         .map((coin: any) => {
@@ -68,17 +69,17 @@ const Tracker: NextPageWithLayout = ({
               >
                 <a className="w-full h-full flex flex-1 justify-between items-center">
                   <CryptoSymName
-                    imageUrl={coin.image.small}
+                    imageUrl={coin.image}
                     name={coin.symbol.toUpperCase()}
                     sym={coin.name}
                   />
                   <CryptoPrice
-                    price={coin.market_data.current_price['eur']}
-                    change24={coin.market_data.price_change_percentage_24h}
+                    price={coin.current_price}
+                    change24={coin.price_change_percentage_24h}
                   />
                   <VolCap
-                    vol={ToMillions(coin.market_data.total_volume['eur'])}
-                    cap={ToMillions(coin.market_data.market_cap['eur'])}
+                    vol={ToMillions(coin.total_volume)}
+                    cap={ToMillions(coin.market_cap)}
                   />
                 </a>
               </Link>
@@ -90,7 +91,8 @@ const Tracker: NextPageWithLayout = ({
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const urlGeko = 'https://api.coingecko.com/api/v3/coins';
+  const urlGeko =
+    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=50&page=1&sparkline=false';
 
   const res = await fetch(urlGeko);
   const data = await res.json();
