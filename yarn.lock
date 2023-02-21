@@ -6482,6 +6482,11 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
+goober@^2.1.10:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/goober/-/goober-2.1.12.tgz#6c1645314ac9a68fe76408e1f502c63df8a39042"
+  integrity sha512-yXHAvO08FU1JgTXX6Zn6sYCUFfB/OJSX8HHjDSgerZHZmFKAb08cykp5LBw5QnmyMcZyPRMqkdyHUSSzge788Q==
+
 gopd@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
@@ -9652,6 +9657,18 @@ react-element-to-jsx-string@^14.3.4:
     is-plain-object "5.0.0"
     react-is "17.0.2"
 
+react-hook-inview@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/react-hook-inview/-/react-hook-inview-4.5.0.tgz#f4ac4117a46f1368599538c36dba96429db934ca"
+  integrity sha512-Hm61BK32/K2Cc3bjBe2bQkndHbQP6NhHvWVX7zYitaitB6T28uUV+wlgxbXU9twxUt7+17HyHq6aezpMUCijQQ==
+
+react-hot-toast@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-2.4.0.tgz#b91e7a4c1b6e3068fc599d3d83b4fb48668ae51d"
+  integrity sha512-qnnVbXropKuwUpriVVosgo8QrB+IaPJCpL8oBI6Ov84uvHZ5QQcTp2qg6ku2wNfgJl6rlQXJIQU5q+5lmPOutA==
+  dependencies:
+    goober "^2.1.10"
+
 react-html-parser@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/react-html-parser/-/react-html-parser-2.0.2.tgz#6dbe1ddd2cebc1b34ca15215158021db5fc5685e"
@@ -10723,6 +10740,13 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+swr@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-2.0.3.tgz#9fe59a17f55b0fdddccd76b7b2f723f9f8e2263e"
+  integrity sha512-sGvQDok/AHEWTPfhUWXEHBVEXmgGnuahyhmRQbjl9XBYxT/MSlAzvXEKQpyM++bMPaI52vcWS2HiKNaW7+9OFw==
+  dependencies:
+    use-sync-external-store "^1.2.0"
+
 symbol.prototype.description@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/symbol.prototype.description/-/symbol.prototype.description-1.0.5.tgz#d30e01263b6020fbbd2d2884a6276ce4d49ab568"
@@ -11283,6 +11307,16 @@ url-loader@^4.1.1:
     loader-utils "^2.0.0"
     mime-types "^2.1.27"
     schema-utils "^3.0.0"
+
+use-debounce@^9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-9.0.3.tgz#bac660c19ab7b38662e08608fee23c7ad303f532"
+  integrity sha512-FhtlbDtDXILJV7Lix5OZj5yX/fW1tzq+VrvK1fnT2bUrPOGruU9Rw8NCEn+UI9wopfERBEZAOQ8lfeCJPllgnw==
+
+use-sync-external-store@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 use@^3.1.0:
   version "3.1.1"
