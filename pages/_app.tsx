@@ -16,7 +16,18 @@ function MyApp({ Component, session, pageProps }: AppPropsWithLayout) {
 
     return (
         <SessionProvider session={session}>
-            <ToastContainer />
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
             <AuthProvider>
                 {getLayout(<Component {...pageProps} />)}
             </AuthProvider>
