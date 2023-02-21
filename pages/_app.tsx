@@ -1,6 +1,5 @@
 import { SessionProvider } from 'next-auth/react';
 import type { AppProps } from 'next/app';
-import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from '../state/auth/AuthContext';
 import './globals.css';
 import { NextPageWithLayout } from './page';
@@ -18,7 +17,6 @@ function MyApp({ Component, session, pageProps }: AppPropsWithLayout) {
             <AuthProvider>
                 {getLayout(<Component {...pageProps} />)}
             </AuthProvider>
-            <Toaster />
         </SessionProvider>
     );
 }
