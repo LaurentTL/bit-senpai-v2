@@ -1,20 +1,22 @@
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
-import Modal from '../components/modals/Modal';
+import Banner from '../components/sections/banner/Banner';
 import { NextPageWithLayout } from './page';
 
 const Test: NextPageWithLayout = () => {
-  return (
-    <>
-      <button className="bg-white">Test Modal</button>
-      <div className="w-screen h-screen flex justify-center items-center">
-        <Modal title="Not Available !" message="We work on this feature." />
-      </div>
-    </>
-  );
+    return (
+        <>
+            <Banner
+                firstLine={'is a cryptocurrency tracker.'}
+                description={
+                    'BitSenpai will bring to crypto investors a automated dollar cost average investment plan with trading bots.'
+                }
+            />
+        </>
+    );
 };
 
 export default Test;
 
 Test.getLayout = (page) => {
-  return <PrimaryLayout>{page}</PrimaryLayout>;
+    return <PrimaryLayout>{page}</PrimaryLayout>;
 };

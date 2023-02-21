@@ -1,9 +1,11 @@
-import { IModal } from './Modal';
+// import { IModal } from './Modal';
 
-const base: IModal = {
-  sampleTextProp: 'Hello world!',
-};
+// const base: IModal = {
+//     title: 'Hello',
+//     message: 'hello',
+// };
 
-export const mockModalProps = {
-  base,
-};
+// export const mockModalProps = {
+//     base,
+// };
+export {};
