@@ -1,5 +1,7 @@
 import { SessionProvider } from 'next-auth/react';
 import type { AppProps } from 'next/app';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from '../state/auth/AuthContext';
 import './globals.css';
 import { NextPageWithLayout } from './page';
@@ -14,6 +16,7 @@ function MyApp({ Component, session, pageProps }: AppPropsWithLayout) {
 
     return (
         <SessionProvider session={session}>
+            <ToastContainer />
             <AuthProvider>
                 {getLayout(<Component {...pageProps} />)}
             </AuthProvider>

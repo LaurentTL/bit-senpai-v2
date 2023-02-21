@@ -5,7 +5,7 @@ import CryptoPrice from '../../components/cryto/crypto-price/CryptoPrice';
 import CryptoSymName from '../../components/cryto/crypto-sym-name/CryptoSymName';
 import VolCap from '../../components/cryto/vol-cap/VolCap';
 import PrimaryLayout from '../../components/layouts/primary/PrimaryLayout';
-import { ToMillions } from '../../utils';
+import { ToMillions } from '../../lib/utils';
 import { NextPageWithLayout } from '../page';
 
 const Tracker: NextPageWithLayout = ({
