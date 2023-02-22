@@ -22,11 +22,11 @@ This project is a crypto currency tracker frontend application using an external
     <img src="https://www.chartjs.org/img/chartjs-logo.svg" title="ChartJS" **alt="ChartJS" width="40" height="40"/>&nbsp;
 </div>
 
-# 🛠️ 👾 Issues, bugs etc.
+# 🛠️ 👾 Issues & bugs.
 
-- [] Tracker page broken beacause of Coingeko has changed mains endpoints
+- [x] Tracker page broken beacause of Coingeko has changed mains endpoints
 
-# ⚡️ Features, config etc.
+# ⚡️ Features & config.
 
 - [x] Complete lib Ui components in isolation with **Storybook**
 - [x] Homemade and functional **search** bar in crypto tracker
