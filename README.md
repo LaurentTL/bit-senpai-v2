@@ -17,6 +17,9 @@ This project is a crypto currency tracker frontend application using an external
     <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg" title="TailwindCSS" alt="TailwindCSS" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/jest/jest-plain.svg" title="Jest" alt="Jest" width="40" height="40"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/storybook/storybook-original.svg" title="Storybook" **alt="Storybook" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/eslint/eslint-original.svg" title="Eslint" **alt="Eslint" width="40" height="40"/>&nbsp;
+    <img src="https://prettier.io/icon.png" title="Prettier" **alt="Prettier" width="40" height="40"/>&nbsp;
+    <img src="https://www.chartjs.org/img/chartjs-logo.svg" title="ChartJS" **alt="ChartJS" width="40" height="40"/>&nbsp;
 </div>
 
 # 🛠️ 👾 Issues, bugs etc.
