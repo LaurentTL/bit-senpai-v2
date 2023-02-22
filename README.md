@@ -33,9 +33,9 @@ This project is a crypto currency tracker frontend application using an external
 - [x] Crypto show with infos and chart build with **ChartJS** with data retrieve from Coingeko API
 - [x] **Responsive** design on avecy sizes of devices such as laptop, tab and mobile
 - [x] Commit linting with **husky**
+s
 - [ ] Authentication system, i'm going to use **Auth0**
 - [ ] **User profil page**
 - [ ] **User dashboard**
 - [ ] Implementation of a **more advance design** on home page
-- [ ] Specifics **modal and page** to inform users that a feature is under construction
-- [ ] **404** and **500** error pages
+- [ ] **500** error pages
