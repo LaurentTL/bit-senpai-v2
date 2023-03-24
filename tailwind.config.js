@@ -18,6 +18,19 @@ module.exports = {
             sans: ['Arial', 'sans-serif'],
             serif: ['Garamond', 'serif'],
         },
+        color: {
+            backblack: '#141415',
+            gold: '#F4BE7E',
+            backlightgray: '#F1F5FE',
+            blurple: '#DFE1F1',
+            secondarytext: '#ADB0B8',
+            tertiraytext: '#6E727A',
+            placeholdertext: '#6E727A',
+            error: '#E54949',
+            success: '#1FC090',
+            chipsprimary: '#3D3123',
+            primarytext: '#FFFFFF',
+        },
         extend: {
             // custom user configuration
             bgGradientDeg: {
@@ -50,17 +63,6 @@ module.exports = {
                 blue: {
                     500: '#1a73e8',
                 },
-                backblack: '#141415',
-                gold: '#F4BE7E',
-                backlightgray: '#F1F5FE',
-                blurple: '#DFE1F1',
-                secondarytext: '#ADB0B8',
-                tertiraytext: '#6E727A',
-                placeholdertext: '#6E727A',
-                error: '#E54949',
-                success: '#1FC090',
-                chipsprimary: '#3D3123',
-                primarytext: '#FFFFFF',
             },
             spacing: {
                 128: '32rem',
