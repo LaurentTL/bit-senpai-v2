@@ -2,10 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    resolve: {
-        fallback: {
-            util: require.resolve('util/'),
-        },
+    webpack(config) {
+        config.resolve.fallback = { util: require.resolve('util/') };
+        return config;
     },
     images: {
         dangerouslyAllowSVG: true,
