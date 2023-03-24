@@ -1,12 +1,11 @@
 import Head from 'next/head';
-import Footer from '../../navigation/footer/Footer';
-import Header from '../../navigation/header/Header';
 
-export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
+export interface ISecondaryLayout
+    extends React.ComponentPropsWithoutRef<'div'> {
     justify?: 'items-center' | 'items-start';
 }
 
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({
+const SecondaryLayout: React.FC<ISecondaryLayout> = ({
     children,
     justify = 'items-center',
     ...divProps
@@ -20,13 +19,11 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({
                 {...divProps}
                 className={`min-h-screen flex flex-col ${justify}`}
             >
-                <Header />
                 <main className="px-5 w-full">{children}</main>
                 <div className="m-auto" />
-                <Footer />
             </div>
         </>
     );
 };
 
-export default PrimaryLayout;
+export default SecondaryLayout;
