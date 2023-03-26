@@ -20,7 +20,7 @@
         "**/*.ts",
         "**/*.tsx",
         "lib/utils/toastMessage.ts",
-        "__tests__/LogButton.test.jsx",
+        "__tests__/components/Logo.test.tsx",
         "jest.config.js"
     ],
     "exclude": ["node_modules"]
