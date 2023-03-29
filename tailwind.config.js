@@ -18,21 +18,25 @@ module.exports = {
             sans: ['Arial', 'sans-serif'],
             serif: ['Garamond', 'serif'],
         },
-        color: {
-            backblack: '#141415',
-            gold: '#F4BE7E',
-            backlightgray: '#F1F5FE',
-            blurple: '#DFE1F1',
-            secondarytext: '#ADB0B8',
-            tertiraytext: '#6E727A',
-            placeholdertext: '#6E727A',
-            error: '#E54949',
-            success: '#1FC090',
-            chipsprimary: '#3D3123',
-            primarytext: '#FFFFFF',
-        },
         extend: {
             // custom user configuration
+            colors: {
+                bgblack: 'var(--bgblack)',
+                bggray: '#2b2b2b',
+                gold: '#F4BE7E',
+                bglightgray: '#F1F5FE',
+                blurple: '#DFE1F1',
+                secondarytext: '#ADB0B8',
+                tertiarytext: '#6E727A',
+                placeholdertext: '#6E727A',
+                error: '#E54949',
+                success: '#1FC090',
+                chipsprimary: '#3D3123',
+                primarytext: '#FFFFFF',
+                blue: {
+                    500: '#1a73e8',
+                },
+            },
             bgGradientDeg: {
                 75: '75deg',
             },
@@ -57,11 +61,6 @@ module.exports = {
                     '75%': {
                         transform: 'rotate(-0.5deg)',
                     },
-                },
-            },
-            colors: {
-                blue: {
-                    500: '#1a73e8',
                 },
             },
             spacing: {

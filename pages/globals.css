@@ -3,20 +3,21 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-primary {
-    @apply border-0 p-2 px-6 bg-slate-100 rounded-md;
-  }
+    .btn-primary {
+        @apply border-0 p-2 px-6 bg-slate-100 rounded-md;
+    }
 }
 
 @layer base {
-  :root {
-    --gradient-first: #3b82f6;
-    --gradient-second: #db2777;
-    --gradient-third: #9333ea;
-  }
-  html,
-  body {
-    min-height: 100vh;
-    background-color: black;
-  }
+    :root {
+        --gradient-first: #3b82f6;
+        --gradient-second: #db2777;
+        --gradient-third: #9333ea;
+        --bgblack: #141414;
+    }
+    html,
+    body {
+        min-height: 100vh;
+        background-color: var(--bgblack);
+    }
 }
