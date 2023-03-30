@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logoBitSenpai from '../../public/static/logos/BS_logo_white.svg';
+import logoBitSenpai from '../../public/static/logos/bs-logo-white.svg';
 
 export interface ILogo {}
 
