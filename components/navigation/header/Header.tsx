@@ -17,7 +17,7 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
     return (
         <header
             {...headerProps}
-            className={`w-full flex flex-row justify-between ${className}`}
+            className={`w-full flex flex-row justify-between ${className} md:px-24 py-2 lg:border-b-[1px] border-gray-600`}
         >
             <div className="w-full relative">
                 <div className="px-3 py-4 flex justify-between items-center lg:w-full">
