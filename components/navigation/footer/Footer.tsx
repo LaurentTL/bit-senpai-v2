@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logoBitSenpai from '../../../public/static/logos/logo.svg';
+import logoBitSenpai from '../../../public/static/logos/bs-logo-gold.svg';
 
 export interface IFooter extends React.ComponentPropsWithoutRef<'footer'> {}
 
@@ -8,7 +8,10 @@ const Footer: React.FC<IFooter> = ({ className, ...footerProps }) => {
     let dateY = new Date().getFullYear();
 
     return (
-        <footer {...footerProps} className={`w-full px-3 ${className}`}>
+        <footer
+            {...footerProps}
+            className={`w-full px-3 border-t-[1px] border-gray-600 pt-8 ${className} md:px-24`}
+        >
             <div className="container w-full grid">
                 <div className="grid w-full grid-cols-2 gap-y-4 md:grid-cols-3">
                     <div className="flex flex-col">
