@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logoBitSenpai from '../../public/static/logos/bs-logo-white.svg';
+import logoBitSenpai from '../../public/static/logos/bs-logo-gold.svg';
 
 export interface ILogo {}
 
@@ -15,7 +15,7 @@ const Logo: React.FC<ILogo> = () => {
                     alt="logo bitsenpai"
                 />
             </div>
-            <p className="font-bold text-xl text-white">BitSenpai</p>
+            <p className="text-xl text-gold">BitSenpai</p>
         </Link>
     );
 };
